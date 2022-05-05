@@ -127,8 +127,8 @@ button:hover{
     position: relative;
     text-align: center;
     transform: rotate(20deg);
-  }
-  #burst-8::before {
+}
+#burst-8::before {
     content: "";
     position: absolute;
     top: 0;
@@ -137,25 +137,13 @@ button:hover{
     width: 80px;
     background: #FB5607;
     transform: rotate(135deg);
-  }
-  #burst-8::after{
-      position: relative;
-      content: 'css only!';
-      top: 30px;
-      letter-spacing: 1px;
-  }
-/* .topBun{
+} 
+#burst-8::after{
     position: relative;
-    background-color: burlywood;
-    height: 80px;
-    width: 300px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius:10px;
-    margin: 1px;
-    box-shadow: inset 0px 28px 10px 0px saddlebrown;
-} */
+    content: 'css only!';
+    top: 30px;
+    letter-spacing: 1px;
+}
 .topBun{
     position: relative;
     background-color: burlywood;
