@@ -74,6 +74,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 400px;
     margin: 10px 0;
 }
 .pageTitle{
@@ -256,10 +257,53 @@ footer p{
     margin: auto;
     letter-spacing: 2px;
 }
+footer small{
+    margin-bottom: 10px;
+}
 footer p a{
     color: #FB5607;
     margin-left: 10px;
 }
 footer p a:hover{
     color: #ffbe0b;
+}
+@media (max-width:650px){
+    .pageTitle{
+        font-size: 4rem;
+    }
+}
+@media (max-width:470px){
+    .pageTitle{
+        font-size: 3rem;
+    }
+    .pageSubTitle{
+        font-size: 2rem;
+    }
+    .formContainer,.foodContainer{
+        width: 97%;
+    }
+}
+@media (max-width:380px){
+    .pageTitle{
+        font-size: 2rem;
+    }
+    .formContainer{
+        padding: 30px 20px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .foodContainer{
+        width: 100%;
+        border-radius: 0;
+    }
+    .ingredient{
+        font-size: 1.5rem;
+        
+    }
+    footer small{
+        font-size: 0.7rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
 }
