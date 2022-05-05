@@ -72,15 +72,8 @@ function App() {
       <h1 className='pageTitle'>burger maker</h1>
       <Form burger={burger} setBurger={setBurger} createBurgerUI={createBurgerUI} />
       <div className="foodContainer">
-        {/* <TopBun />
-        <Tomato />
-        <Lettuce />
-        <Cheese />
-        <Beef />
-        <Cheese />
-        <Beef />
-        <Bacon />
-        <BottomBun /> */}
+        <div id="burst-8">
+        </div>
         <TopBun />
         {createBurgerUI()}
         <BottomBun />

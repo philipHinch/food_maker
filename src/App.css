@@ -104,6 +104,7 @@ button:hover{
     -webkit-text-stroke-color: #FB5607;
 }
 .foodContainer{
+    position: relative;
     background-color: #f6f6f6;
     border-radius: 10px;
     width: 80%;
@@ -116,7 +117,34 @@ button:hover{
     justify-content: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-.topBun{
+#burst-8 {
+    margin-right: auto;
+    left: -20px;
+    top: -20px;
+    background: #FB5607;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    transform: rotate(20deg);
+  }
+  #burst-8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: #FB5607;
+    transform: rotate(135deg);
+  }
+  #burst-8::after{
+      position: relative;
+      content: 'css only!';
+      top: 30px;
+      letter-spacing: 1px;
+  }
+/* .topBun{
     position: relative;
     background-color: burlywood;
     height: 80px;
@@ -125,6 +153,20 @@ button:hover{
     border-top-right-radius: 50%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px;
+    margin: 1px;
+    box-shadow: inset 0px 28px 10px 0px saddlebrown;
+} */
+.topBun{
+    position: relative;
+    background-color: burlywood;
+    height: 130px;
+    width: 300px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    border-radius: 150px 150px 10px 10px;
+
     margin: 1px;
     box-shadow: inset 0px 28px 10px 0px saddlebrown;
 }
@@ -136,7 +178,7 @@ button:hover{
     width: 12px;
 }
 .seed1{
-    top: 30px;
+    top: 45px;
     left: 30px;
     transform: rotate(-20deg);
 }
@@ -182,8 +224,8 @@ button:hover{
     transform: rotate(20deg);
 }
 .seed9{
-    top: 30px;
-    left: 270px;
+    top: 50px;
+    left: 260px;
     transform: rotate(-20deg);
 }
 .bottomBun{
@@ -198,12 +240,18 @@ button:hover{
     box-shadow: inset 0px -6px 10px 0px saddlebrown;
 }
 .lettuce{
-    height: 10px;
+    height: 12px;
     width:350px;
-    background-color: green;
+    /* background-color: green; */
     margin: 1px;
     border-radius: 10px;
-    box-shadow: inset 0px -3px 5px 0px rgba(0, 0, 0, 0.5);
+    /* box-shadow: inset 0px -3px 5px 0px rgba(0, 0, 0, 0.5); */
+}
+.lettuce svg{
+    width: 100%;
+    border-radius: 50px;
+    transform: rotate(180deg);
+    /* box-shadow: inset 0px 0px -1px 0px rgba(0, 0, 0, 0.5); */
 }
 .cheese{
     height: 10px;
@@ -224,7 +272,7 @@ button:hover{
 
 }
 .tomatoContainer{
-    height: 10px;
+    height: 12px;
     width:360px;
     margin: 1px;
     display: flex;
@@ -232,14 +280,14 @@ button:hover{
 }
 .tomato{
     width: 140px;
-    height: 10px;
+    height: 12px;
     background-color: crimson;
     border-radius: 10px;
     box-shadow: inset 0px -3px 5px 0px rgba(0, 0, 0, 0.5);
 
 }
 .bacon{
-    height: 10px;
+    height: 8px;
     width:310px;
     background-color: firebrick;
     margin: 1px;
